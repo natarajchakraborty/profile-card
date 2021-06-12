@@ -17,7 +17,7 @@
 } */
 
 body{
-    background-image:url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+    background-image:url('../images/bg-pattern-top.svg'),url('../images/bg-pattern-bottom.svg');
     background-position: right 52vw bottom 42vh, left 48vw top 42vh;
     background-attachment: fixed;
     background-repeat: no-repeat, no-repeat
