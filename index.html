@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
   <title>Frontend Mentor | Profile card component</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-body text-base18 bg-darkcyan">
-  <div class="min-h-screen flex flex-col justify-center items-center">
+
+<body class="font-body text-base18 bg-darkcyan  relative block overflow-hidden">
     <!-- image -->
-    <div class="w-96 bg-white rounded-xl">
-        Victor Crest
-        26
-        London
-      
-        80K
-        Followers
-      
-        803K
-        Likes
-      
-        1.4K
-        Photos
+    <div class="absolute topimage  z-10">
+        <img src="images/bg-pattern-top.svg" alt="topPattern">
+      </div>
+  <div class="min-h-screen flex flex-col justify-center items-center relative">
+
+    <div class="mx-7 h-96 bg-white rounded-2xl relative block overflow-hidden w-80 z-30">
+      <div class="absolute inset-x-0 top-0">
+        <img src="images/bg-pattern-card.svg" alt="pattern">
+        <div class="relative block">
+          <div class="absolute -top-10  left-1/2 -ml-12">
+            <img src="images/image-victor.jpg" alt="victor" class="rounded-full w-10/11 border-4 border-white">
+          </div>
+        </div>
+      </div>
+      <div class="mt-56 flex flex-col justify-center items-center relative">
+        <div class="flex flex-col justify-around">
+          <div class="flex flex-row justify-around">
+            <div class="text-darkDesaturatedBlue font-bold">
+              Victor Crest
+            </div>
+            <div class="text-darkGray ml-2">26</div>
+          </div>
+          <div class="text-darkGray  text-sm text-center mt-3">
+            London
+          </div>
+        </div>
+        <hr class="mt-4 w-full text-darkGrayishBlue" />
+
+        <div class="mt-4 flex flex-row justify-between items-center h-14">
+          <div class="flex flex-col w-20">
+            <div class="text-darkDesaturatedBlue font-bold text-center">
+              80K
+            </div>
+            <div class="text-darkGray text-xs text-center mt-3">
+              Followers
+            </div>
+          </div>
+          <div class="flex flex-col w-20">
+            <div class="text-darkDesaturatedBlue font-bold text-center">
+              803K
+            </div>
+            <div class="text-darkGray text-xs text-center mt-3">
+              Likes
+            </div>
+          </div>
+          <div class="flex flex-col w-20">
+            <div class="text-darkDesaturatedBlue font-bold text-center">
+              1.4K
+            </div>
+            <div class="text-darkGray text-xs text-center mt-3">
+              Photos
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- image -->
+
   </div>
+    <!-- image -->
+    <div class="absolute bottomimage z-10">
+        <img src="images/bg-pattern-bottom.svg" alt="bottomPattern">
+      </div>
 </body>
+
 </html>
